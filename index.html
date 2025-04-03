@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Lab</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <h1>My Event Project</h1>
+    
+    <div class="section">
+        <h3>Hover Button</h3>
+        <button id="hoverBtn">Hover Button</button>
+        <p id="hoverMsg"></p>
+    </div>
+
+    <div class="section">
+        <h3>Type Something:</h3>
+        <input type="text" id="keyInput">
+        <p>Last key: <span id="keyDisplay">...</span></p>
+    </div>
+
+    <div class="section">
+        <h3>Submit Form</h3>
+        <form id="myForm">
+            <input type="text" placeholder="Enter name" required>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="formMsg"></p>
+    </div>
+
+    <div class="section">
+        <h3>Focus Test</h3>
+        <input type="text" id="focusInput">
+        <p id="focusMsg"></p>
+    </div>
+
+    <div class="section">
+        <h3>Click Buttons:</h3>
+        <div id="buttonContainer">
+            <button class="action-btn">Button 1</button>
+            <button class="action-btn">Button 2</button>
+            <button class="action-btn">Button 3</button>
+        </div>
+        <p id="clickMsg"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
