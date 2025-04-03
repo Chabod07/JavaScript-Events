@@ -20,7 +20,6 @@ keyInput.addEventListener('keyup', function(e) {
 });
 
 
-// Add to script.js
 // Form submission
 const form = document.getElementById('myForm');
 const formMsg = document.getElementById('formMsg');
@@ -39,5 +38,29 @@ focusInput.onfocus = function() {
 };
 
 focusInput.onblur = function() {
-    focusMsg.textContent = "Input lost focus";
+    focusMsg.textContent = "focusLost!";
 };
+
+
+// Event delegation for buttons
+const buttonContainer = document.getElementById('buttonContainer');
+const clickMsg = document.getElementById('clickMsg');
+
+buttonContainer.addEventListener('click', function(e) {
+    if(e.target.classList.contains('action-btn')) {
+        clickMsg.textContent = "Clicked: " + e.target.textContent;
+    }
+});
+
+// Added input validation
+document.querySelector('#myForm input').required = true;
+
+
+
+
+
+
+
+
+
+
